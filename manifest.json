@@ -1,0 +1,86 @@
+{
+  "name": "Enhanced Stopwatch & Timer Suite",
+  "short_name": "Stopwatch",
+  "description": "A comprehensive timing application with stopwatch, pomodoro timer, and custom countdown features",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#191654",
+  "theme_color": "#43C6AC",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "utilities"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo.gif",
+      "sizes": "48x48",
+      "type": "image/gif"
+    },
+    {
+      "src": "img/Pomodoro.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/screenshot-stopwatch.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Stopwatch with lap tracking"
+    },
+    {
+      "src": "img/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile view of timer"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Stopwatch",
+      "short_name": "Stopwatch",
+      "description": "Open the stopwatch",
+      "url": "/",
+      "icons": [
+        {
+          "src": "img/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Pomodoro Timer",
+      "short_name": "Pomodoro",
+      "description": "Open the pomodoro timer",
+      "url": "/pomodoro/",
+      "icons": [
+        {
+          "src": "img/Pomodoro.png",
+          "sizes": "180x180"
+        }
+      ]
+    },
+    {
+      "name": "Custom Timer",
+      "short_name": "Timer",
+      "description": "Open the custom timer",
+      "url": "/custom_timer/",
+      "icons": [
+        {
+          "src": "img/favicon.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

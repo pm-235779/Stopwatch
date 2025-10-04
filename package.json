@@ -1,0 +1,63 @@
+{
+  "name": "enhanced-stopwatch-suite",
+  "version": "2.0.0",
+  "description": "A comprehensive timing application with stopwatch, pomodoro timer, and custom countdown features",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "build": "npm run lint && npm run format",
+    "lint": "eslint js/**/*.js --fix",
+    "format": "prettier --write \"**/*.{js,html,css,json,md}\"",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "optimize-images": "imagemin img/**/*.{jpg,png,gif} --out-dir=img/optimized",
+    "serve": "npx http-server . -p 8080",
+    "dev": "concurrently \"npm run serve\" \"npm run watch\"",
+    "watch": "nodemon --watch js --watch *.html --watch *.css --exec \"npm run lint\"",
+    "deploy": "gh-pages -d .",
+    "pwa-check": "lighthouse http://localhost:3000 --only-categories=pwa --chrome-flags=\"--headless\"",
+    "audit": "lighthouse http://localhost:3000 --chrome-flags=\"--headless\""
+  },
+  "keywords": [
+    "stopwatch",
+    "timer",
+    "pomodoro",
+    "productivity",
+    "pwa",
+    "javascript"
+  ],
+  "author": "Enhanced by AI Assistant",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avinash201199/stopwatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avinash201199/stopwatch/issues"
+  },
+  "homepage": "https://avinash201199.github.io/stopwatch/",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "gh-pages": "^6.1.0",
+    "http-server": "^14.1.1",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "lighthouse": "^11.4.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
